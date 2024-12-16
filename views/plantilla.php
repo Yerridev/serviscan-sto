@@ -1,15 +1,9 @@
-<!--
-	Copyright: Carlos Alfaro
 
-	++ Redes Sociales ++
-	YouTube: https://www.youtube.com/c/CarlosAlfaro007
-	Facebook: https://www.facebook.com/CarlosAlfaroES/
-	Email: carlosalfaro.info@gmail.com
--->
 <?php
     /*---------- Iniciando sesion ----------*/
     include "./views/inc/session_start.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="<?php echo LANG; ?>">
 <head>
