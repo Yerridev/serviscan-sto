@@ -47,7 +47,7 @@
 	
 
 	/*----------  Configuración de moneda - Currency Settings  ----------*/
-	const COIN_SYMBOL="S/";
+	const COIN_SYMBOL="S/. ";
 	const COIN_NAME="PEN";
 	const COIN_DECIMALS="2";
 	const COIN_SEPARATOR_THOUSAND=",";
