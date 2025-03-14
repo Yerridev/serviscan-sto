@@ -3,7 +3,10 @@
 	/*----------  
 	Ruta o dominio del servidor  - Server path or domain
 	----------*/
-	const SERVERURL="http://localhost/STO/";
+	// const SERVERURL="http://localhost/STO/";
+	const SERVERURL = (getenv("RAILWAY_ENVIRONMENT") ? "https://tu-proyecto.up.railway.app/" : "http://localhost/STO/");
+
+
 
 
 	/*----------  

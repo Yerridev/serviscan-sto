@@ -71,6 +71,26 @@
 
 
 		/*---------- Funcion datos tabla - Table data function ----------*/
+		// public function datos_tabla($tipo, $tabla, $campo, $condicion = "", $parametros = []){
+		// 	$tipo = self::limpiar_cadena($tipo);
+		// 	$tabla = self::limpiar_cadena($tabla);
+		// 	$campo = self::limpiar_cadena($campo);
+
+		// 	if($tipo == "Unico"){
+		// 		$condicion = self::limpiar_cadena($condicion);
+		// 		$sql = self::conectar()->prepare("SELECT * FROM $tabla WHERE $campo=:ID AND $condicion");
+		// 		$sql->bindParam(":ID", $id);
+		// 	} elseif($tipo == "Normal"){
+		// 		$sql = self::conectar()->prepare("SELECT $campo FROM $tabla WHERE $condicion");
+		// 		foreach ($parametros as $clave => $valor) {
+		// 			$sql->bindValue($clave, $valor);
+		// 		}
+		// 	}
+		// 	$sql->execute();
+
+		// 	return $sql;
+		// }
+		
         public function datos_tabla($tipo,$tabla,$campo,$id){
 			$tipo=self::limpiar_cadena($tipo);
 			$tabla=self::limpiar_cadena($tabla);
@@ -88,7 +108,8 @@
             $sql->execute();
 
             return $sql;
-		} /*-- Fin Funcion - End Function --*/
+		} 
+		/*-- Fin Funcion - End Function --*/
 
 
 		/*----------  Funcion para ejecutar una consulta UPDATE preparada - Function to execute a prepared UPDATE query ----------*/
