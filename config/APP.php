@@ -3,7 +3,7 @@
 	/*----------  
 	Ruta o dominio del servidor  - Server path or domain
 	----------*/
-	const SERVERURL="http://localhost/STO/";
+	// const SERVERURL="http://localhost/STO/";
 	// const SERVERURL = (getenv("RAILWAY_ENVIRONMENT") ? "https://tu-proyecto.up.railway.app/" : "http://localhost/STO/");
 
 
@@ -108,7 +108,7 @@
 
 	
 	define("PORT", $_ENV["PORT"] ?? "8080");
-	// define("SERVERURL", $_ENV["SERVERURL_PROD"] ?? "https://serviscan-sto-production-d28f.up.railway.app");
+	define("SERVERURL", $_ENV["SERVERURL_PROD"] ?? "https://serviscan-sto-production-d28f.up.railway.app");
 
 
 	// define("COMPANY", $_ENV["COMPANY"] ?? "Serviscan S.A.C");
