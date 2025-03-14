@@ -12,13 +12,13 @@
 	// /*----------  
 	// Nombre de la empresa o compañia -  Company or company name
 	// ----------*/
-	// const COMPANY="Serviscan S.A.C";
+	const COMPANY="Serviscan S.A.C";
 
 
 	// /*----------  Idioma - Language
 	// Español -> es 
 	// ----------*/
-	// const LANG="es";
+	const LANG="es";
 
 	
 	// /*----------  
@@ -27,34 +27,34 @@
 
 	// 	index | product | bag | registration | details | signin
 	// ----------*/
-	// const DASHBOARD="admin";
+	const DASHBOARD="admin";
 
 
 	// /*----------  
 	// Nombre de la sesion -  Session name
 	// ----------*/
-	// const SESSION_NAME="STO";
+	const SESSION_NAME="STO";
 
 
 	// /*----------  Redes sociales - Social networks  ----------*/
-	// const FACEBOOK="https://www.facebook.com/";
-	// const INSTAGRAM="https://www.instagram.com/";
-	// const YOUTUBE="https://www.youtube.com";
-	// const TWITTER="";
-	// const TIKTOK="https://www.tiktok.com/";
+	const FACEBOOK="https://www.facebook.com/";
+	const INSTAGRAM="https://www.instagram.com/";
+	const YOUTUBE="https://www.youtube.com";
+	const TWITTER="";
+	const TIKTOK="https://www.tiktok.com/";
 
 
 	// /*----------  Direccion - Address  ----------*/
-	// const COUNTRY="Perú";
-	// const ADDRESS="Par María Cruz - Carretera Lambayeque - Perú";
+	const COUNTRY="Perú";
+	const ADDRESS="Par María Cruz - Carretera Lambayeque - Perú";
 	
 
 	// /*----------  Configuración de moneda - Currency Settings  ----------*/
-	// const COIN_SYMBOL="S/. ";
-	// const COIN_NAME="PEN";
-	// const COIN_DECIMALS="2";
-	// const COIN_SEPARATOR_THOUSAND=",";
-	// const COIN_SEPARATOR_DECIMAL=".";
+	const COIN_SYMBOL="S/. ";
+	const COIN_NAME="PEN";
+	const COIN_DECIMALS="2";
+	const COIN_SEPARATOR_THOUSAND=",";
+	const COIN_SEPARATOR_DECIMAL=".";
 
 
 	// /*----------  Tipos de documentos - Document types ----------*/
@@ -93,7 +93,7 @@
 	// /*----------  Tamaño de papel de impresora termica (en milimetros) - Thermal printer paper size (in millimeters)
 	// 	THERMAL_PRINT_SIZE -> 80 | 57
 	// ----------*/
-	// const THERMAL_PRINT_SIZE="80";
+	const THERMAL_PRINT_SIZE="80";
 
 
 	// /*----------  Zona horaria - Time zone  ----------*/
@@ -111,25 +111,25 @@
 	define("SERVERURL", $_ENV["SERVERURL_PROD"] ?? "https://serviscan-sto-production-d28f.up.railway.app");
 
 
-	define("COMPANY", $_ENV["COMPANY"] ?? "Serviscan S.A.C");
-	define("LANG", $_ENV["LANG"] ?? "es");
-	define("DASHBOARD", $_ENV["DASHBOARD"] ?? "admin");
-	define("SESSION_NAME", $_ENV["SESSION_NAME"] ?? "STO");
-	define("COUNTRY", $_ENV["COUNTRY"] ?? "Perú");
-	define("ADDRESS", $_ENV["ADDRESS"] ?? "Par María Cruz - Carretera Lambayeque - Perú");
-	define("COIN_SYMBOL", $_ENV["COIN_SYMBOL"] ?? "S/. ");
-	define("COIN_NAME", $_ENV["COIN_NAME"] ?? "PEN");
-	define("COIN_DECIMALS", $_ENV["COIN_DECIMALS"] ?? "2");
-	define("COIN_SEPARATOR_THOUSAND", $_ENV["COIN_SEPARATOR_THOUSAND"] ?? ",");
-	define("COIN_SEPARATOR_DECIMAL", $_ENV["COIN_SEPARATOR_DECIMAL"] ?? ".");
-	define("COVER_PRODUCT", $_ENV["COVER_PRODUCT"] ?? "3");
-	define("GALLERY_PRODUCT", $_ENV["GALLERY_PRODUCT"] ?? "7");
-	define("BARCODE_FORMAT", $_ENV["BARCODE_FORMAT"] ?? "CODE128");
-	define("BARCODE_TEXT_ALIGN", $_ENV["BARCODE_TEXT_ALIGN"] ?? "center");
-	define("BARCODE_TEXT_POSITION", $_ENV["BARCODE_TEXT_POSITION"] ?? "bottom");
-	define("THERMAL_PRINT_SIZE", $_ENV["THERMAL_PRINT_SIZE"] ?? "80");
+	// define("COMPANY", $_ENV["COMPANY"] ?? "Serviscan S.A.C");
+	// define("LANG", $_ENV["LANG"] ?? "es");
+	// define("DASHBOARD", $_ENV["DASHBOARD"] ?? "admin");
+	// define("SESSION_NAME", $_ENV["SESSION_NAME"] ?? "STO");
+	// define("COUNTRY", $_ENV["COUNTRY"] ?? "Perú");
+	// define("ADDRESS", $_ENV["ADDRESS"] ?? "Par María Cruz - Carretera Lambayeque - Perú");
+	// define("COIN_SYMBOL", $_ENV["COIN_SYMBOL"] ?? "S/. ");
+	// define("COIN_NAME", $_ENV["COIN_NAME"] ?? "PEN");
+	// define("COIN_DECIMALS", $_ENV["COIN_DECIMALS"] ?? "2");
+	// define("COIN_SEPARATOR_THOUSAND", $_ENV["COIN_SEPARATOR_THOUSAND"] ?? ",");
+	// define("COIN_SEPARATOR_DECIMAL", $_ENV["COIN_SEPARATOR_DECIMAL"] ?? ".");
+	// define("COVER_PRODUCT", $_ENV["COVER_PRODUCT"] ?? "3");
+	// define("GALLERY_PRODUCT", $_ENV["GALLERY_PRODUCT"] ?? "7");
+	// define("BARCODE_FORMAT", $_ENV["BARCODE_FORMAT"] ?? "CODE128");
+	// define("BARCODE_TEXT_ALIGN", $_ENV["BARCODE_TEXT_ALIGN"] ?? "center");
+	// define("BARCODE_TEXT_POSITION", $_ENV["BARCODE_TEXT_POSITION"] ?? "bottom");
+	// define("THERMAL_PRINT_SIZE", $_ENV["THERMAL_PRINT_SIZE"] ?? "80");
 
 
-	// Configurar la zona horaria
-	date_default_timezone_set($_ENV["TIMEZONE"] ?? "America/Lima");
+	// // Configurar la zona horaria
+	// date_default_timezone_set($_ENV["TIMEZONE"] ?? "America/Lima");
 
