@@ -12,7 +12,7 @@
 		/*---------- Controlador obtener vistas ----------*/
 		public function obtener_vistas_controlador($modulo,$idioma){
 			if(isset($_GET['views'])){
-				$ruta=explode("/", $_GET['views']);
+				$ruta = explode("/", $_GET['views']);
 
 				if($modulo=="dashboard"){
 					if(isset($ruta[1]) && $ruta[1]!=""){

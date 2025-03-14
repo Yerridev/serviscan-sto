@@ -105,24 +105,26 @@
 	// 	http://php.net/manual/es/timezones.php
 	// */
 
-	const SERVERURL = (getenv("RAILWAY_ENVIRONMENT") ? getenv("SERVERURL_PROD") : getenv("SERVERURL_DEV"));
-	const COMPANY = getenv("COMPANY");
-	const LANG = getenv("LANG");
-	const DASHBOARD = getenv("DASHBOARD");
-	const SESSION_NAME = getenv("SESSION_NAME");
-	const COUNTRY = getenv("COUNTRY");
-	const ADDRESS = getenv("ADDRESS");
-	const COIN_SYMBOL = getenv("COIN_SYMBOL");
-	const COIN_NAME = getenv("COIN_NAME");
-	const COIN_DECIMALS = getenv("COIN_DECIMALS");
-	const COIN_SEPARATOR_THOUSAND = getenv("COIN_SEPARATOR_THOUSAND");
-	const COIN_SEPARATOR_DECIMAL = getenv("COIN_SEPARATOR_DECIMAL");
-	const COVER_PRODUCT = getenv("COVER_PRODUCT");
-	const GALLERY_PRODUCT = getenv("GALLERY_PRODUCT");
-	const BARCODE_FORMAT = getenv("BARCODE_FORMAT");
-	const BARCODE_TEXT_ALIGN = getenv("BARCODE_TEXT_ALIGN");
-	const BARCODE_TEXT_POSITION = getenv("BARCODE_TEXT_POSITION");
-	const THERMAL_PRINT_SIZE = getenv("THERMAL_PRINT_SIZE");
+
+	const SERVERURL = ($_ENV["RAILWAY_ENVIRONMENT"] ?? false) ? ($_ENV["SERVERURL_PROD"] ?? "") : ($_ENV["SERVERURL_DEV"] ?? "");
+	const COMPANY = $_ENV["COMPANY"] ?? "Serviscan S.A.C";
+	const LANG = $_ENV["LANG"] ?? "es";
+	const DASHBOARD = $_ENV["DASHBOARD"] ?? "admin";
+	const SESSION_NAME = $_ENV["SESSION_NAME"] ?? "STO";
+	const COUNTRY = $_ENV["COUNTRY"] ?? "Perú";
+	const ADDRESS = $_ENV["ADDRESS"] ?? "Par María Cruz - Carretera Lambayeque - Perú";
+	const COIN_SYMBOL = $_ENV["COIN_SYMBOL"] ?? "S/. ";
+	const COIN_NAME = $_ENV["COIN_NAME"] ?? "PEN";
+	const COIN_DECIMALS = $_ENV["COIN_DECIMALS"] ?? "2";
+	const COIN_SEPARATOR_THOUSAND = $_ENV["COIN_SEPARATOR_THOUSAND"] ?? ",";
+	const COIN_SEPARATOR_DECIMAL = $_ENV["COIN_SEPARATOR_DECIMAL"] ?? ".";
+	const COVER_PRODUCT = $_ENV["COVER_PRODUCT"] ?? "3";
+	const GALLERY_PRODUCT = $_ENV["GALLERY_PRODUCT"] ?? "7";
+	const BARCODE_FORMAT = $_ENV["BARCODE_FORMAT"] ?? "CODE128";
+	const BARCODE_TEXT_ALIGN = $_ENV["BARCODE_TEXT_ALIGN"] ?? "center";
+	const BARCODE_TEXT_POSITION = $_ENV["BARCODE_TEXT_POSITION"] ?? "bottom";
+	const THERMAL_PRINT_SIZE = $_ENV["THERMAL_PRINT_SIZE"] ?? "80";
 
 	// Configurar la zona horaria
-	date_default_timezone_set(getenv("TIMEZONE"));
+	date_default_timezone_set($_ENV["TIMEZONE"] ?? "America/Lima");
+
