@@ -110,23 +110,24 @@
 	define("PORT", $_ENV["PORT"] ?? "8080");
 	define("SERVERURL", $_ENV["SERVERURL_PROD"] ?? "https://serviscan-sto-production-d28f.up.railway.app");
 
-	const COMPANY = $_ENV["COMPANY"] ?? "Serviscan S.A.C";
-	const LANG = $_ENV["LANG"] ?? "es";
-	const DASHBOARD = $_ENV["DASHBOARD"] ?? "admin";
-	const SESSION_NAME = $_ENV["SESSION_NAME"] ?? "STO";
-	const COUNTRY = $_ENV["COUNTRY"] ?? "Perú";
-	const ADDRESS = $_ENV["ADDRESS"] ?? "Par María Cruz - Carretera Lambayeque - Perú";
-	const COIN_SYMBOL = $_ENV["COIN_SYMBOL"] ?? "S/. ";
-	const COIN_NAME = $_ENV["COIN_NAME"] ?? "PEN";
-	const COIN_DECIMALS = $_ENV["COIN_DECIMALS"] ?? "2";
-	const COIN_SEPARATOR_THOUSAND = $_ENV["COIN_SEPARATOR_THOUSAND"] ?? ",";
-	const COIN_SEPARATOR_DECIMAL = $_ENV["COIN_SEPARATOR_DECIMAL"] ?? ".";
-	const COVER_PRODUCT = $_ENV["COVER_PRODUCT"] ?? "3";
-	const GALLERY_PRODUCT = $_ENV["GALLERY_PRODUCT"] ?? "7";
-	const BARCODE_FORMAT = $_ENV["BARCODE_FORMAT"] ?? "CODE128";
-	const BARCODE_TEXT_ALIGN = $_ENV["BARCODE_TEXT_ALIGN"] ?? "center";
-	const BARCODE_TEXT_POSITION = $_ENV["BARCODE_TEXT_POSITION"] ?? "bottom";
-	const THERMAL_PRINT_SIZE = $_ENV["THERMAL_PRINT_SIZE"] ?? "80";
+
+	define("COMPANY", $_ENV["COMPANY"] ?? "Serviscan S.A.C");
+	define("LANG", $_ENV["LANG"] ?? "es");
+	define("DASHBOARD", $_ENV["DASHBOARD"] ?? "admin");
+	define("SESSION_NAME", $_ENV["SESSION_NAME"] ?? "STO");
+	define("COUNTRY", $_ENV["COUNTRY"] ?? "Perú");
+	define("ADDRESS", $_ENV["ADDRESS"] ?? "Par María Cruz - Carretera Lambayeque - Perú");
+	define("COIN_SYMBOL", $_ENV["COIN_SYMBOL"] ?? "S/. ");
+	define("COIN_NAME", $_ENV["COIN_NAME"] ?? "PEN");
+	define("COIN_DECIMALS", $_ENV["COIN_DECIMALS"] ?? "2");
+	define("COIN_SEPARATOR_THOUSAND", $_ENV["COIN_SEPARATOR_THOUSAND"] ?? ",");
+	define("COIN_SEPARATOR_DECIMAL", $_ENV["COIN_SEPARATOR_DECIMAL"] ?? ".");
+	define("COVER_PRODUCT", $_ENV["COVER_PRODUCT"] ?? "3");
+	define("GALLERY_PRODUCT", $_ENV["GALLERY_PRODUCT"] ?? "7");
+	define("BARCODE_FORMAT", $_ENV["BARCODE_FORMAT"] ?? "CODE128");
+	define("BARCODE_TEXT_ALIGN", $_ENV["BARCODE_TEXT_ALIGN"] ?? "center");
+	define("BARCODE_TEXT_POSITION", $_ENV["BARCODE_TEXT_POSITION"] ?? "bottom");
+	define("THERMAL_PRINT_SIZE", $_ENV["THERMAL_PRINT_SIZE"] ?? "80");
 
 
 	// Configurar la zona horaria
