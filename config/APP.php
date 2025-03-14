@@ -124,6 +124,8 @@
 	const BARCODE_TEXT_ALIGN = $_ENV["BARCODE_TEXT_ALIGN"] ?? "center";
 	const BARCODE_TEXT_POSITION = $_ENV["BARCODE_TEXT_POSITION"] ?? "bottom";
 	const THERMAL_PRINT_SIZE = $_ENV["THERMAL_PRINT_SIZE"] ?? "80";
+	define("PORT", $_ENV["PORT"] ?? "9000");
+
 
 	// Configurar la zona horaria
 	date_default_timezone_set($_ENV["TIMEZONE"] ?? "America/Lima");
