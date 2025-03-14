@@ -108,7 +108,7 @@
 
 	// const SERVERURL = ($_ENV["RAILWAY_ENVIRONMENT"] ?? false) ? ($_ENV["SERVERURL_PROD"] ?? "") : ($_ENV["SERVERURL_DEV"] ?? "");
 	define("PORT", $_ENV["PORT"] ?? "8080");
-	const SERVERURL = $_ENV["SERVERURL_PROD"] ?? "https://serviscan-sto-production-d28f.up.railway.app";
+	define("SERVERURL", $_ENV["SERVERURL_PROD"] ?? "https://serviscan-sto-production-d28f.up.railway.app");
 
 	const COMPANY = $_ENV["COMPANY"] ?? "Serviscan S.A.C";
 	const LANG = $_ENV["LANG"] ?? "es";
