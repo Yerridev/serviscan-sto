@@ -4,103 +4,125 @@
 	Ruta o dominio del servidor  - Server path or domain
 	----------*/
 	// const SERVERURL="http://localhost/STO/";
-	const SERVERURL = (getenv("RAILWAY_ENVIRONMENT") ? "https://tu-proyecto.up.railway.app/" : "http://localhost/STO/");
+	// const SERVERURL = (getenv("RAILWAY_ENVIRONMENT") ? "https://tu-proyecto.up.railway.app/" : "http://localhost/STO/");
 
 
 
 
-	/*----------  
-	Nombre de la empresa o compañia -  Company or company name
-	----------*/
-	const COMPANY="Serviscan S.A.C";
+	// /*----------  
+	// Nombre de la empresa o compañia -  Company or company name
+	// ----------*/
+	// const COMPANY="Serviscan S.A.C";
 
 
-	/*----------  Idioma - Language
-	Español -> es 
-	----------*/
-	const LANG="es";
+	// /*----------  Idioma - Language
+	// Español -> es 
+	// ----------*/
+	// const LANG="es";
 
 	
-	/*----------  
-		Palabra clave dashboard - Dashboard keyword
-		No usar los siguientes valores - Do not use the following values
+	// /*----------  
+	// 	Palabra clave dashboard - Dashboard keyword
+	// 	No usar los siguientes valores - Do not use the following values
 
-		index | product | bag | registration | details | signin
-	----------*/
-	const DASHBOARD="admin";
-
-
-	/*----------  
-	Nombre de la sesion -  Session name
-	----------*/
-	const SESSION_NAME="STO";
+	// 	index | product | bag | registration | details | signin
+	// ----------*/
+	// const DASHBOARD="admin";
 
 
-	/*----------  Redes sociales - Social networks  ----------*/
-	const FACEBOOK="https://www.facebook.com/";
-	const INSTAGRAM="https://www.instagram.com/";
-	const YOUTUBE="https://www.youtube.com";
-	const TWITTER="";
-	const TIKTOK="https://www.tiktok.com/";
+	// /*----------  
+	// Nombre de la sesion -  Session name
+	// ----------*/
+	// const SESSION_NAME="STO";
 
 
-	/*----------  Direccion - Address  ----------*/
-	const COUNTRY="Perú";
-	const ADDRESS="Par María Cruz - Carretera Lambayeque - Perú";
+	// /*----------  Redes sociales - Social networks  ----------*/
+	// const FACEBOOK="https://www.facebook.com/";
+	// const INSTAGRAM="https://www.instagram.com/";
+	// const YOUTUBE="https://www.youtube.com";
+	// const TWITTER="";
+	// const TIKTOK="https://www.tiktok.com/";
+
+
+	// /*----------  Direccion - Address  ----------*/
+	// const COUNTRY="Perú";
+	// const ADDRESS="Par María Cruz - Carretera Lambayeque - Perú";
 	
 
-	/*----------  Configuración de moneda - Currency Settings  ----------*/
-	const COIN_SYMBOL="S/. ";
-	const COIN_NAME="PEN";
-	const COIN_DECIMALS="2";
-	const COIN_SEPARATOR_THOUSAND=",";
-	const COIN_SEPARATOR_DECIMAL=".";
+	// /*----------  Configuración de moneda - Currency Settings  ----------*/
+	// const COIN_SYMBOL="S/. ";
+	// const COIN_NAME="PEN";
+	// const COIN_DECIMALS="2";
+	// const COIN_SEPARATOR_THOUSAND=",";
+	// const COIN_SEPARATOR_DECIMAL=".";
 
 
-	/*----------  Tipos de documentos - Document types ----------*/
-	const DOCUMENTS_USERS=["DNI","Cedula","DUI","Licencia","Pasaporte","Otro"];
-	const DOCUMENTS_COMPANY=["DNI","Cedula","RUT","NIT","RUC","Otro"];
+	// /*----------  Tipos de documentos - Document types ----------*/
+	// const DOCUMENTS_USERS=["DNI","Cedula","DUI","Licencia","Pasaporte","Otro"];
+	// const DOCUMENTS_COMPANY=["DNI","Cedula","RUT","NIT","RUC","Otro"];
 
 
-	/*----------  Tipos de unidades de productos - Types of product units ----------*/
-	const PRODUTS_UNITS=["Unidad","Libra","Kilogramo","Caja","Paquete","Lata","Galon","Botella","Tira","Sobre","Bolsa","Saco","Tarjeta","Otro"];
+	// /*----------  Tipos de unidades de productos - Types of product units ----------*/
+	// const PRODUTS_UNITS=["Unidad","Libra","Kilogramo","Caja","Paquete","Lata","Galon","Botella","Tira","Sobre","Bolsa","Saco","Tarjeta","Otro"];
 
-	/*----------  Límite de tamaño de imágenes de productos en MB - Product image size limit in MB ----------*/
-	const COVER_PRODUCT=3;
-	const GALLERY_PRODUCT=7;
-
-
-	/*----------  Marcador de campos obligatorios - Mandatory field marker  ----------*/
-	const FIELD_OBLIGATORY = '&nbsp; <i class="fab fa-font-awesome-alt text-danger"></i> &nbsp;';
+	// /*----------  Límite de tamaño de imágenes de productos en MB - Product image size limit in MB ----------*/
+	// const COVER_PRODUCT=3;
+	// const GALLERY_PRODUCT=7;
 
 
-
-	/*----------  Configuración de codigos de barras - Bar code settings
-
-		BARCODE_FORMAT -> CODE128 | CODE39 | EAN | EAN-13 | EAN-8 | EAN-5 | EAN-2 | UPC | ITF | ITF-14 | MSI | MSI10 | MSI11 | MSI1010 | MSI1110 | Pharmacode
-
-		BARCODE_TEXT_ALIGN -> center | left | right
-
-		BARCODE_TEXT_POSITION -> top | bottom
-
-	----------*/
-
-	const BARCODE_FORMAT="CODE128";
-	const BARCODE_TEXT_ALIGN="center";
-	const BARCODE_TEXT_POSITION="bottom";
+	// /*----------  Marcador de campos obligatorios - Mandatory field marker  ----------*/
+	// const FIELD_OBLIGATORY = '&nbsp; <i class="fab fa-font-awesome-alt text-danger"></i> &nbsp;';
 
 
-	/*----------  Tamaño de papel de impresora termica (en milimetros) - Thermal printer paper size (in millimeters)
-		THERMAL_PRINT_SIZE -> 80 | 57
-	----------*/
-	const THERMAL_PRINT_SIZE="80";
+
+	// /*----------  Configuración de codigos de barras - Bar code settings
+
+	// 	BARCODE_FORMAT -> CODE128 | CODE39 | EAN | EAN-13 | EAN-8 | EAN-5 | EAN-2 | UPC | ITF | ITF-14 | MSI | MSI10 | MSI11 | MSI1010 | MSI1110 | Pharmacode
+
+	// 	BARCODE_TEXT_ALIGN -> center | left | right
+
+	// 	BARCODE_TEXT_POSITION -> top | bottom
+
+	// ----------*/
+
+	// const BARCODE_FORMAT="CODE128";
+	// const BARCODE_TEXT_ALIGN="center";
+	// const BARCODE_TEXT_POSITION="bottom";
 
 
-	/*----------  Zona horaria - Time zone  ----------*/
-	date_default_timezone_set("America/Lima");
-	/*
-		Configuración de zona horaria de tu país, para más información visita - Time zone configuration of your country, for more information visit
+	// /*----------  Tamaño de papel de impresora termica (en milimetros) - Thermal printer paper size (in millimeters)
+	// 	THERMAL_PRINT_SIZE -> 80 | 57
+	// ----------*/
+	// const THERMAL_PRINT_SIZE="80";
+
+
+	// /*----------  Zona horaria - Time zone  ----------*/
+	// date_default_timezone_set("America/Lima");
+	// /*
+	// 	Configuración de zona horaria de tu país, para más información visita - Time zone configuration of your country, for more information visit
 		
-		http://php.net/manual/es/function.date-default-timezone-set.php
-		http://php.net/manual/es/timezones.php
-	*/
+	// 	http://php.net/manual/es/function.date-default-timezone-set.php
+	// 	http://php.net/manual/es/timezones.php
+	// */
+
+	const SERVERURL = (getenv("RAILWAY_ENVIRONMENT") ? getenv("SERVERURL_PROD") : getenv("SERVERURL_DEV"));
+	const COMPANY = getenv("COMPANY");
+	const LANG = getenv("LANG");
+	const DASHBOARD = getenv("DASHBOARD");
+	const SESSION_NAME = getenv("SESSION_NAME");
+	const COUNTRY = getenv("COUNTRY");
+	const ADDRESS = getenv("ADDRESS");
+	const COIN_SYMBOL = getenv("COIN_SYMBOL");
+	const COIN_NAME = getenv("COIN_NAME");
+	const COIN_DECIMALS = getenv("COIN_DECIMALS");
+	const COIN_SEPARATOR_THOUSAND = getenv("COIN_SEPARATOR_THOUSAND");
+	const COIN_SEPARATOR_DECIMAL = getenv("COIN_SEPARATOR_DECIMAL");
+	const COVER_PRODUCT = getenv("COVER_PRODUCT");
+	const GALLERY_PRODUCT = getenv("GALLERY_PRODUCT");
+	const BARCODE_FORMAT = getenv("BARCODE_FORMAT");
+	const BARCODE_TEXT_ALIGN = getenv("BARCODE_TEXT_ALIGN");
+	const BARCODE_TEXT_POSITION = getenv("BARCODE_TEXT_POSITION");
+	const THERMAL_PRINT_SIZE = getenv("THERMAL_PRINT_SIZE");
+
+	// Configurar la zona horaria
+	date_default_timezone_set(getenv("TIMEZONE"));
