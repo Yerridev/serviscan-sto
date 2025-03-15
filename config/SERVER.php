@@ -16,15 +16,15 @@
 	// const SECRET_IV='102791';
 	
 	/*----------  Datos del servidor  ----------*/
-	define("SERVER", $_ENV["SERVER"] ?? "localhost");
-	define("DB", $_ENV["DB"] ?? "ser_mecanica");
-	define("USER", $_ENV["USER"] ?? "root");
-	define("PASS", $_ENV["PASS"] ?? "");
+	define("SERVER", getenv("DB_HOST") ?: "localhost");
+	define("DB", getenv("DB_DATABASE") ?: "ser_mecanica");
+	define("USER", getenv("DB_USERNAME") ?: "root");
+	define("PASS", getenv("DB_PASSWORD") ?: "");
 
-	define("SGBD", $_ENV["SGBD"] ?? "mysql:host=".SERVER.";dbname=".DB);
-
+	define("SGBD", "mysql:host=".SERVER.";dbname=".DB);
 
 	/*----------  Datos de la encriptación  ----------*/
-	define("METHOD", $_ENV["METHOD"] ?? "AES-256-CBC");
-	define("SECRET_KEY", $_ENV["SECRET_KEY"] ?? '$STO@2021');
-	define("SECRET_IV", $_ENV["SECRET_IV"] ?? '102791');
+	define("METHOD", getenv("METHOD") ?: "AES-256-CBC");
+	define("SECRET_KEY", getenv("SECRET_KEY") ?: '$STO@2021');
+	define("SECRET_IV", getenv("SECRET_IV") ?: '102791');
+

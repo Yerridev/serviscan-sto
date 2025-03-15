@@ -30,7 +30,7 @@ USE `ser_mecanica`;
 -- Estructura de tabla para la tabla `caja`
 --
 
-CREATE TABLE `caja` (
+CREATE TABLE IF NOT EXISTS caja (
   `caja_id` int(5) NOT NULL,
   `caja_numero` int(5) NOT NULL,
   `caja_nombre` varchar(100) NOT NULL,
